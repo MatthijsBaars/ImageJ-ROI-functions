@@ -1,4 +1,4 @@
-1-CompositeGen.ijm
+# 1-CompositeGen.ijm
 Use this macro to generate composites from image stacks in a folder.
 
 The script first prompts for which folder to process.
@@ -12,7 +12,7 @@ Output is saved to this folder as a multi-channel tiff file.
 The generated file is named "[input name w/o extension]_comp.tiff".
 Channel intensity is not scaled, but ImageJ display values are.
 
-2-ROIsave.ijm
+# 2-ROIsave.ijm
 Use this macro to store selections stored in the ImageJ ROI Manager to a file next to the opened image.
 Preferably the image generated with "1-CompositeGen.ijm" should be used!
 It is possible to rename rois in the ROI Manager, names will be maintained in results of "3-Measure.ijm".
@@ -21,7 +21,7 @@ All rois in the ROI Manager will be saved as "[input name w/o extension]_rois.zi
 Additionally, the rois will be overlayed on the current image and stored as "[input name w/o extension]_overlay.png".
 Rois will be deleted from the ROI Manager, and the selected image will be closed after saving.
 
-3-Measure.ijm
+# 3-Measure.ijm
 Use this macro to measure all rois generated with "2-ROIsave.ijm" on the original image stack.
 Specify the same folder as given as input in "1-CompositeGen.ijm".
 The folder layout and file-naming will be recognized.
