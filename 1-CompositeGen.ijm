@@ -28,7 +28,7 @@ for (i = 0; i < filelist.length; i++) {
 		compositeid = createComposite(id, compositeChannels);
 		selectImage(id);
 		close();
-		savetitle = substring(filelist[i], 0, indexOf(filelist[i], ".ome.tiff")) + "_comp.tiff";
+		savetitle = substring(filelist[i], 0, indexOf(filelist[i], suffix)) + "_comp.tiff";
 		selectImage(compositeid);
 		saveAs("tiff", exportpath + savetitle);
 		close();
